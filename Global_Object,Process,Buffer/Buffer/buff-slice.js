@@ -7,7 +7,7 @@ const conversionMap = {
 };
 
 fs.readFile(__filename, (err, buffer) => {
-    let tag = buffer.slice(-10, -1);
+    let tag = buffer.slice(-4, -1);
 
     for(let i = 0; i < tag.length; i++) {
         tag[i] = conversionMap[tag[i]]; 
