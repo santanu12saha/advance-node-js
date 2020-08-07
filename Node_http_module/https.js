@@ -10,5 +10,5 @@ server.on('request', (req, res) => {
 });
 
 server.listen(443, () => {
-    console.log('Server is running at port 443')
+    console.log('Server is running at port 443');
 });
