@@ -1,0 +1,5 @@
+Watch a directory and report 3 events.
+
+1. Files was added.
+2. Files was removed.
+3. Files was changed.

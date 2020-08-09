@@ -1,0 +1,1 @@
+Script to fix files in a directory. Each file has it data duplicated. Truncate each file in half.
