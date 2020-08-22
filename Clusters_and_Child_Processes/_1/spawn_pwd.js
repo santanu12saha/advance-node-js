@@ -1,0 +1,15 @@
+const { spawn } = require('child_process');
+
+const child = spawn('pwd');
+
+child.stdout.on('data', (data) => {
+    console.log(`Child stdout:\n${data}`);
+});
+
+child.stderr.on('data', (data) => {
+    console.log(`Child stderr:\n${data}`);
+});
+
+child.on('exit', function(code, signal) {
+    console.log(`Child process exited with code ${code}, signal ${signal}`);
+});
